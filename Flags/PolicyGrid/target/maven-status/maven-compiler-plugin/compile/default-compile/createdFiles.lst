@@ -1,0 +1,15 @@
+com\plefs\gpr\backends\uftexecution$1.class
+com\plefs\gpr\backends\Application.class
+com\plefs\gpr\backends\TestConfiguration.class
+com\plefs\gpr\backends\uftexecution.class
+com\plefs\gpr\backends\Reporter.class
+com\plefs\gpr\backends\Copier.class
+com\plefs\gpr\backends\UserStoryName.class
+com\plefs\gpr\backends\Zipper.class
+com\plefs\gpr\backends\XpathRepository.class
+com\plefs\gpr\backends\Runner.class
+com\plefs\gpr\backends\BrowserInitialization.class
+com\plefs\gpr\backends\Mailer.class
+com\plefs\gpr\script\US_241573.class
+com\plefs\gpr\backends\Backend.class
+com\plefs\gpr\backends\DataObject.class

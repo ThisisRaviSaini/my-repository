@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Policy_Grid_Compare_Suite]">
+  <parameter name="US_Name" value="241573"/>
+  <test name="US 241573(failed)">
+    <parameter name="US_Name" value="241573"/>
+    <classes>
+      <class name="com.plefs.gpr.script.US_241573">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="TC_02"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.plefs.gpr.script.US_241573 -->
+    </classes>
+  </test> <!-- US 241573(failed) -->
+</suite> <!-- Failed suite [Policy_Grid_Compare_Suite] -->
