@@ -18,7 +18,7 @@ public class Copier {
 		File srcDirReport = new File("Reports");
 		File destDirReport = new File(dataPath + "/" + Reporter.reportName);
 		// File srcDirTestngReport = new File("test-output");
-		// File destDirTestNgReport = new File(dataPath + "/test-output");
+		// Hello File destDirTestNgReport = new File(dataPath + "/test-output");
 
 		FileUtils.copyDirectory(srcDirReport, destDirReport);
 		// FileUtils.copyDirectory(srcDirTestngReport, destDirTestNgReport);
