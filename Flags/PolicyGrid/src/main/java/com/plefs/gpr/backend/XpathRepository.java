@@ -1,4 +1,4 @@
-package com.plefs.gpr.backends;
+package com.plefs.gpr.backend;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

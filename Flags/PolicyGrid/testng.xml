@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Policy_Grid_Compare_Suite">
 	<test name="US 241573">
-		<parameter name="US_Name" value="241573" />
+		<parameter name="US_Name" value="LinkedIn" />
 		<classes>
-			<class name="com.plefs.gpr.script.US_241573" />
+			<class name="com.plefs.gpr.scripts.LinkedIn" />
 		</classes>
 	</test>
 

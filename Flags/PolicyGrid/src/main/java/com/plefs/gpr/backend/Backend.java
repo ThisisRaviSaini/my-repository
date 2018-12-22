@@ -1,4 +1,4 @@
-package com.plefs.gpr.backends;
+package com.plefs.gpr.backend;
 
 import java.awt.image.BufferedImage;
 import java.io.File;

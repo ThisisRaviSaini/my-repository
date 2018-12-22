@@ -1,4 +1,4 @@
-package com.plefs.gpr.backends;
+package com.plefs.gpr.backend;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;

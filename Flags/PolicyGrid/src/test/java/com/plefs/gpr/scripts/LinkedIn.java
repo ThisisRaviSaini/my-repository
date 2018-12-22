@@ -1,4 +1,4 @@
-package com.plefs.gpr.script;
+package com.plefs.gpr.scripts;
 
 import java.io.IOException;
 
@@ -16,21 +16,21 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.plefs.gpr.backends.Backend;
-import com.plefs.gpr.backends.BrowserInitialization;
-import com.plefs.gpr.backends.Copier;
-import com.plefs.gpr.backends.DataObject;
-import com.plefs.gpr.backends.Mailer;
-import com.plefs.gpr.backends.Reporter;
-import com.plefs.gpr.backends.TestConfiguration;
-import com.plefs.gpr.backends.UserStoryName;
-import com.plefs.gpr.backends.XpathRepository;
-import com.plefs.gpr.backends.Zipper;
-import com.plefs.gpr.backends.uftexecution;
+import com.plefs.gpr.backend.Backend;
+import com.plefs.gpr.backend.BrowserInitialization;
+import com.plefs.gpr.backend.Copier;
+import com.plefs.gpr.backend.DataObject;
+import com.plefs.gpr.backend.Mailer;
+import com.plefs.gpr.backend.Reporter;
+import com.plefs.gpr.backend.TestConfiguration;
+import com.plefs.gpr.backend.UserStoryName;
+import com.plefs.gpr.backend.XpathRepository;
+import com.plefs.gpr.backend.Zipper;
+import com.plefs.gpr.backend.uftexecution;
 
-public class US_241573 {
+public class LinkedIn {
 	public static String exceptionMsg = "Exception occured in the script";
-	Logger logger = Logger.getLogger(US_241573.class);
+	Logger logger = Logger.getLogger(LinkedIn.class);
 
 	// ********************************************************************************************//
 	// Description: Verify that Compare Selected button is enabled when user
@@ -107,7 +107,7 @@ public class US_241573 {
 	// Last updated : 03/05/2018
 	// *********************************************************************************************//
 
-	@Test
+	//@Test
 	public void TC_02() throws Exception {
 		String testCaseName = "TC_02";
 		logger.info("Executing the Test Case No. " + testCaseName);

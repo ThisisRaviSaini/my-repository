@@ -1,4 +1,4 @@
-package com.plefs.gpr.backends;
+package com.plefs.gpr.backend;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
