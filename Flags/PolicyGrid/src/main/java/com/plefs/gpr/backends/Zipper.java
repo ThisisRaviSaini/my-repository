@@ -10,7 +10,7 @@ import org.apache.log4j.Logger;
 
 public class Zipper {
 	static Logger logger = Logger.getLogger(Zipper.class);
-
+//hello
 	public static void zipReport(String reportPath) throws Exception {
 		FileOutputStream fos = new FileOutputStream(reportPath + ".zip");
 		ZipOutputStream zos = new ZipOutputStream(fos);
