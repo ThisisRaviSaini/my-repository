@@ -24,13 +24,13 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.plefs.backends.BaseClass;
-import com.plefs.backends.CommonMethods;
-import com.plefs.backends.CurrentDateTime;
-import com.plefs.backends.DataObject;
-import com.plefs.backends.HTMLReportGenerator;
-import com.plefs.backends.ObjectRepository;
-import com.plefs.backends.UserStory;
+import com.plefs.backend.BaseClass;
+import com.plefs.backend.CommonMethods;
+import com.plefs.backend.CurrentDateTime;
+import com.plefs.backend.DataObject;
+import com.plefs.backend.HTMLReportGenerator;
+import com.plefs.backend.ObjectRepository;
+import com.plefs.backend.UserStory;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 

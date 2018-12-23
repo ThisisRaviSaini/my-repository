@@ -1,4 +1,4 @@
-package com.plefs.backends;
+package com.plefs.backend;
 
 import java.awt.Rectangle;
 import java.awt.Robot;

@@ -1,4 +1,4 @@
-package com.plefs.backends;
+package com.plefs.backend;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;

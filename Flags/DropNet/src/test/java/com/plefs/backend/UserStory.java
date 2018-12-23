@@ -1,4 +1,4 @@
-package com.plefs.backends;
+package com.plefs.backend;
 
 public class UserStory extends BaseClass{
 	
