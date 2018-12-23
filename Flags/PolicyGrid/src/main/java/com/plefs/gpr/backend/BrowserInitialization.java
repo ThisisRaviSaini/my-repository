@@ -8,6 +8,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BrowserInitialization {
 	static Logger logger = Logger.getLogger(BrowserInitialization.class);
 
@@ -18,6 +20,12 @@ public class BrowserInitialization {
 	 * :01/29/2018
 	 *********************************************************************************************/
 	public static void intilaize() {
+		
+		
+		
+		 
+		
+		
 
 		try {
 			String browser = Backend.getProperty("Browser");
@@ -25,7 +33,7 @@ public class BrowserInitialization {
 		
 			case "HTML Unit": {
 				String driverPath = Backend.getProperty("DriverPath");
-				//System.setProperty("webdriver.gecko.driver", driverPath + "/geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", driverPath + "/geckodriver.exe");
 				logger.info("<<<------------------Opening HTML Unit Browser------------------->>>");
 				driver = new HtmlUnitDriver();
 				openApplication();
@@ -33,7 +41,8 @@ public class BrowserInitialization {
 			}
 			case "Phantom": {
 				String driverPath = Backend.getProperty("DriverPath");
-				System.setProperty("phantomjs.binary.path", driverPath + "/phantomjs.exe");
+			//	System.setProperty("phantomjs.binary.path", driverPath + "/phantomjs.exe");
+				WebDriverManager.phantomjs().setup();
 				logger.info("<<<------------------Opening Phantom Browser------------------->>>");
 				driver = new HtmlUnitDriver();
 				openApplication();
@@ -49,7 +58,8 @@ public class BrowserInitialization {
 			}
 			case "Chrome": {
 				String driverPath = Backend.getProperty("DriverPath");
-				System.setProperty("webdriver.chrome.driver", driverPath + "/chromedriver.exe");
+				//System.setProperty("webdriver.chrome.driver", driverPath + "/chromedriver.exe");
+				WebDriverManager.chromedriver().setup();
 				logger.info("<<<------------------Opening Chrome Browser------------------->>>");
 				driver = new ChromeDriver();
 				openApplication();
@@ -57,7 +67,7 @@ public class BrowserInitialization {
 			}
 			case "ChromeHeadless": {
 				String driverPath = Backend.getProperty("DriverPath");
-				System.setProperty("webdriver.chrome.driver", driverPath + "/chromedriver.exe");
+				//System.setProperty("webdriver.chrome.driver", driverPath + "/chromedriver.exe");
 				logger.info("<<<------------------Opening Chrome Headless Browser------------------->>>");
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--headless");
@@ -67,7 +77,8 @@ public class BrowserInitialization {
 			}
 			case "IE": {
 				String driverPath = Backend.getProperty("DriverPath");
-				System.setProperty("webdriver.ie.driver", driverPath + "IEDriverServer.exe");
+				//System.setProperty("webdriver.ie.driver", driverPath + "IEDriverServer.exe");
+				WebDriverManager.iedriver().setup();
 				logger.info("<<<------------------Opening Internet Explorer Browser------------------->>>");
 				driver = new InternetExplorerDriver();
 				openApplication();
@@ -76,7 +87,7 @@ public class BrowserInitialization {
 
 			case "FireFox": {
 				String driverPath = Backend.getProperty("DriverPath");
-				System.setProperty("webdriver.firefox.marionette", driverPath + "FirefoxDriverServer.exe");
+				//System.setProperty("webdriver.firefox.marionette", driverPath + "FirefoxDriverServer.exe");
 				logger.info("<<<------------------Opening FireFox Browser------------------->>>");
 				driver = new FirefoxDriver();
 				openApplication();

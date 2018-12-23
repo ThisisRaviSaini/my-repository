@@ -66,9 +66,8 @@ public class TestConfiguration {
 				Reporter.terminateReporter();
 				Zipper.zipReport(Reporter.folderPath);
 				Backend.takeReportScreenshot();
-				System.out.println("COPYING THE DATA");
-				//Copier.copy();
-				// Mailer.sendEmail(Reporter.folderPath);
+				Copier.copy();
+			    Mailer.sendEmail(Reporter.folderPath);
 			}
 
 		} catch (Exception e) {
