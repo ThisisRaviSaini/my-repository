@@ -1,4 +1,4 @@
-package com.plefs.backend;
+package com.plefs.backends;
 
 import java.io.IOException;
 
@@ -7,6 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 
@@ -32,7 +34,8 @@ public class BaseClass {
 			obj_common_methods=new CommonMethods();
 			obj_data_object=new DataObject();
 		//	String driverPath = CommonMethods.Call_config("DriverPath");
-			System.setProperty("webdriver.chrome.driver", "D:\\Ravi Saini\\My Workspace\\DropNet\\Drivers\\chromedriver.exe"); 
+		//	System.setProperty("webdriver.chrome.driver", "D:\\Ravi Saini\\My Workspace\\DropNet\\Drivers\\chromedriver.exe"); 
+			WebDriverManager.chromedriver().setup();
 			System.out.println("opening chrome");
 			driver= new ChromeDriver();
 			driver.manage().window().maximize();

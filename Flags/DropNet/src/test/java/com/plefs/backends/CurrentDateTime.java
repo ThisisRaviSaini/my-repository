@@ -1,4 +1,4 @@
-package com.plefs.backend;
+package com.plefs.backends;
 
 import java.time.LocalDate;
 import java.time.LocalTime;

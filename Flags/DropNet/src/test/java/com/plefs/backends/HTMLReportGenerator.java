@@ -1,4 +1,4 @@
-package com.plefs.backend;
+package com.plefs.backends;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
