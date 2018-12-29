@@ -55,11 +55,11 @@ public class US_241569 {
 				testCaseDesc = DataObject.getVariable("Test Case Description", testCaseName);
 				passTestCaseDesc = DataObject.getVariable("Pass Description", testCaseName);
 				failTestCaseDesc = DataObject.getVariable("Fail Description", testCaseName);
-				screenShotName = Backend.makeDirectory(UserStoryName.getUSName() + "_" + testCaseName);
+				screenShotName =  Backend.makeDirectory(UserStoryName.getUSName() + "_" + testCaseName);
 				Reporter.testCaseStart(UserStoryName.getUSName() + "_" + testCaseName, testCaseDesc);
 				Application.findButtonAndClick(XpathRepository.by_GPRExtendreports);
 				Backend.waitForElement(BrowserInitialization.driver, XpathRepository.by_Lasttimecomparetblrecord, 60);
-				String Policygrid = DataObject.getVariable("DropDownMenu", testCaseName);
+				String Policygrid = DataObject.getVariable("DropDownMen", testCaseName);
 				Select policygrid_dropdown = new Select(BrowserInitialization.driver.findElement(XpathRepository.by_dropdownPG));
 				policygrid_dropdown.selectByVisibleText(Policygrid);
 				BrowserInitialization.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
