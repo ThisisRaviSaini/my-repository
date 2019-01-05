@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WebService" parallel="classes" thread-count="2">
+   <test name="Webservice">
+		<classes>
+			<class name="Webservice.BaseService" />
+			<class name="Webservice.BaseServiceOption" />
+			<class name="Webservice.BasePackagingType" />
+		</classes>
+	</test>	
+	 <test name="Webservice Conflicts">
+		<classes>
+			<class name="Webservice.Conflicts" />
+		</classes>
+	</test>	
+</suite>
