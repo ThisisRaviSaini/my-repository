@@ -17,6 +17,9 @@ public class FrequencyOfElements {
 			if (fr[i] != visited)
 				System.out.println("    " + a[i] + "    |    " + fr[i]);
 		}
+		Character.isLowerCase('f');
+		
+		
 	}
 
 	public static void main(String[] args) {
