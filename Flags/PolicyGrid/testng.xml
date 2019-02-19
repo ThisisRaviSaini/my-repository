@@ -6,6 +6,4 @@
 			<class name="com.plefs.gpr.scripts.LinkedIn" />
 		</classes>
 	</test>
-
-
 </suite>

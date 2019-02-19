@@ -22,9 +22,7 @@
 						<goals>
 							<goal>java</goal>
 						</goals>
-
 					</execution>
-
 				</executions>
 				<configuration>
 					<mainClass>org.saini.ravi.Practise.RotateLeftArray</mainClass>

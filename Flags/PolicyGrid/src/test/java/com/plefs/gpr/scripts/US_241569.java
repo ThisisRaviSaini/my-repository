@@ -31,7 +31,7 @@ import com.plefs.gpr.backend.XpathRepository;
 import com.plefs.gpr.backend.Zipper;
 import com.plefs.gpr.backend.uftexecution;
 
-public class US_241569 {
+public class US_241569 extends BrowserInitialization {
 	Logger logger = Logger.getLogger(US_241569.class);
 
 	/**********************************************************************************************
@@ -62,7 +62,7 @@ public class US_241569 {
 				String Policygrid = DataObject.getVariable("DropDownMen", testCaseName);
 				Select policygrid_dropdown = new Select(BrowserInitialization.driver.findElement(XpathRepository.by_dropdownPG));
 				policygrid_dropdown.selectByVisibleText(Policygrid);
-				BrowserInitialization.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				String Expected_PG = "OFFERING_CONSTRAINTS";
 				String Actual_PG = BrowserInitialization.driver.findElement(XpathRepository.by_OfferingConstraintOption).getText();
 				if (Actual_PG.equals(Expected_PG)) {
